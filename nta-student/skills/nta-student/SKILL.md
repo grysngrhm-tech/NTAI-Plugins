@@ -4,7 +4,7 @@ description: Use when someone studies the Nutritional Therapy Association (NTA) 
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.3.0"
+  version: "1.3.1"
 ---
 
 # NTA Student
@@ -56,7 +56,7 @@ Learning sticks when the learner tries first. With a practice question:
 5. After a miss, offer a similar question: `study` with mode `quiz_me` and `similar_to` set to the earlier `quiz_id`.
 6. For another question on the same topic, call `study` with mode `quiz_me` and `avoid` set to the `quiz_id`s of the recent questions (up to five), so NTAI writes a different one.
 
-If NTAI's view is showing the question, let the learner answer there. The view has its own Hint, Another question, Try a similar question and Report a problem buttons, and it adds the result to the learner's study record; an answer checked in the chat is not added to it.
+If NTAI's view is showing the question, let the learner answer there. The view has its own Hint, Another question, Try a similar question and Report a problem buttons. Whether the learner answers in the view or in the chat, the first check of each question goes into their study record, so check only the learner's own choice, once they have made it.
 
 ## 4. Academic integrity
 

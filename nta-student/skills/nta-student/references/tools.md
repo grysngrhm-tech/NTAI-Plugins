@@ -20,7 +20,7 @@ Returns numbered excerpts from the NTA lessons the learner's account has unlocke
 `quiz_id` and `level` (1 or 2). Level 1 names the lesson; level 2 quotes a short passage. Never the answer. Some questions have fewer hints; NTAI says when there are no more.
 
 ## `check_answer`
-`quiz_id` and `choice` (a letter), or `give_up: true`. Returns whether the choice was right, the answer, and the explanation with its sources. A `quiz_id` works for the same learner for about a day.
+`quiz_id` and `choice` (a letter), or `give_up: true`. Returns whether the choice was right, the answer, and the explanation with its sources. A `quiz_id` works for the same learner for about a day. The first check of each question goes into the learner's study record (right, not right, or given up); checking the same question again changes nothing. It writes to the learner's own record, so their app may ask them to allow it.
 
 ## `my_study`
 `view`: `resume` (where to continue), `review` (lessons due for review), `progress` (practice by course or module) or `plan` (the saved study plan). Read only from NTAI's record of the learner's practice.
@@ -37,4 +37,4 @@ Returns numbered excerpts from the NTA lessons the learner's account has unlocke
 ## `about_ntai`
 What NTAI is, what the person's account allows, how NTAI uses AI, and where to get help.
 
-`record_practice` is used only by NTAI's own view; you will not see it. The study record grows from practice answered in NTAI's view and from saved plans, not from answers checked in the chat.
+The study record grows from practice questions checked with `check_answer` (in the chat or in NTAI's view) and from saved plans.

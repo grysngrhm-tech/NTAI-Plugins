@@ -4,6 +4,9 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-student 1.3.1
+- **Study record (NTAI):** the first check of each practice question now goes into your study record whether you answer in NTAI's view or in the chat, and nothing done after the answer is shown can change it. `check_answer` writes to your own record, so your app may ask you once to allow it. The skill says so.
+
 ### nta-staff 1.4.0
 - **Suggest a change to NTAI (staff suggestions):** `suggest_change` sends NTA a correction (a wrong fact, a gap, wording), a problem in a lesson, or an idea; a named NTA reviewer approves or declines it, and nothing in NTAI changes until then. `same_as` adds "me too" to an existing suggestion instead of a duplicate. `list_suggestions` shows every staff suggestion with its status, through to live in NTAI. Suggestions with a name, contact detail or health detail about a person are refused.
 - **Skill:** when to suggest, to search first and pass the result's `report_ref` and passage number, and to check for the same suggestion before filing. A new starter, "Suggest a change to NTAI". Nothing to reconnect.
