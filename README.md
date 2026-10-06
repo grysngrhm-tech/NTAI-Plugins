@@ -17,10 +17,12 @@ Plugins work on Claude's paid plans (Pro, Max, Team and Enterprise), on the web 
 1. Open **Customize → Plugins**.
 2. Choose **Add → Add marketplace** and enter `grysngrhm-tech/NTAI-Plugins`.
 3. Install the plugin for you from the list above.
-4. Installing does not connect NTAI. Open the plugin's **Connectors** tab and choose **Connect** next to NTAI.
+4. Installing does not connect NTAI. Open the plugin's **Connectors** tab and choose **Connect** (the connection is named after the plugin, such as `nta-student`).
 5. Sign in with your NTA account (an emailed code or your passkey). NTAI then shows which NTA account you signed in with and asks you to allow the connection; choose **Allow**.
 
 Marketplace plugins update automatically. To update sooner, use **Check for updates** on the marketplace (or turn **Sync automatically** on if it is off).
+
+**More than one plugin:** install every plugin that fits you, for example NTA Staff and NTA Student if you work at NTA and also study. Each plugin has its own NTAI connection with its own tools, so connect each one; after the first, you are usually still signed in and only choose Allow. What each offers still depends on your NTA account.
 
 **From a file:** download `nta-student.plugin` or `nta-staff.plugin` from NTAI's help page (https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help), choose **Add → Upload plugin** in **Customize → Plugins**, then connect as in steps 4 and 5. An uploaded plugin does not update itself; upload the new file to update.
 

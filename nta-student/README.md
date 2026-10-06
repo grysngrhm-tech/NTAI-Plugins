@@ -13,7 +13,7 @@ Needs an NTA account with a program enrollment, or a graduate's NTA membership, 
 
 1. In Claude, open **Customize → Plugins**, choose **Add → Add marketplace** and enter `grysngrhm-tech/NTAI-Plugins`. Install **NTA Student**. It updates itself from then on.
    Or download `nta-student.plugin` from https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help and choose **Add → Upload plugin** (an uploaded plugin does not update itself).
-2. Installing does not connect NTAI: open the plugin's **Connectors** tab and choose **Connect** next to NTAI.
+2. Installing does not connect NTAI: open the plugin's **Connectors** tab and choose **Connect** (the connection is named `nta-student`).
 3. Sign in with your NTA account (an emailed code or your passkey), check the NTA account NTAI names, and choose **Allow**.
 
 On a Claude Team or Enterprise plan, an Owner adds the NTAI connector first (Organization settings → Connectors). Help: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help.

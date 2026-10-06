@@ -4,7 +4,7 @@ description: Use when someone studies the Nutritional Therapy Association (NTA) 
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # NTA Student

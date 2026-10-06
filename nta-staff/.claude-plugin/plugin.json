@@ -1,7 +1,7 @@
 {
   "name": "nta-staff",
   "displayName": "NTA Staff",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "For Nutritional Therapy Association staff: find what NTA's curriculum, program information and references say with NTAI, cite it in replies to students, and know what goes to a person. Needs an NTA staff account.",
   "author": { "name": "Nutritional Therapy Association", "url": "https://nutritionaltherapy.com" },
   "homepage": "https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help",

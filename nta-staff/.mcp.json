@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "ntai": { "type": "http", "url": "https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/mcp" }
+    "nta-staff": { "type": "http", "url": "https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/mcp/staff" }
   }
 }

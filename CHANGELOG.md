@@ -2,6 +2,11 @@
 
 What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/plugin.json`; it goes up with every release, and Claude updates plugins installed from this marketplace by it.
 
+## 2026-10-06
+
+### nta-student 1.2.0, nta-staff 1.2.0
+- **One connection per plugin:** each plugin now connects to its own NTAI address with only its own tools, named after the plugin (`nta-student`, `nta-staff`). You can install both and connect each; NTA Staff no longer offers practice questions, and NTA Student does not offer staff search. Reconnect after updating: choose **Connect** in the plugin's **Connectors** tab.
+
 ## 2026-10-05
 
 ### nta-student 1.1.0, nta-staff 1.1.0
