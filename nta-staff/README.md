@@ -1,6 +1,6 @@
 # NTA Staff
 
-For Nutritional Therapy Association staff. Adds a skill for finding what NTA's curriculum, program information and references say with NTAI's `ask` tool, citing it in replies, reporting a problem with what it found, routing what needs a person, and keeping health information out of AI tools; and the NTAI connector.
+For Nutritional Therapy Association staff. Adds a skill for finding what NTA's curriculum, program information and references say with NTAI's `search` tool, citing it in replies, reporting a problem with what it found, routing what needs a person, and keeping health information out of AI tools; and the NTAI connector.
 
 Needs an NTA staff account and a paid Claude plan (Pro, Max, Team or Enterprise).
 

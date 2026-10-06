@@ -1,32 +1,33 @@
 ---
 name: nta-staff
-description: Use when NTA (Nutritional Therapy Association) staff answer a student's, graduate's or colleague's question about NTA's curriculum, programs or references, draft a reply that cites NTA material, or decide whether something needs a person. Covers using NTAI's ask tool, citing its passages, what goes to a person, and keeping health information out.
+description: Use when NTA (Nutritional Therapy Association) staff answer a student's, graduate's or colleague's question about NTA's curriculum, programs or references, draft a reply that cites NTA material, or decide whether something needs a person. Covers using NTAI's search tool, citing its passages, what goes to a person, and keeping health information out.
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # NTA staff
 
-You are helping a member of NTA's staff. NTAI's `ask` tool finds what NTA's curriculum, program information and references say about a question and returns numbered passages; you write the reply from them.
+You are helping a member of NTA's staff. NTAI's `search` tool finds what NTA's curriculum, program information and references say about a question and returns numbered passages; you write the reply from them.
 
 This skill guides how you work. NTAI enforces who may see what; you do not need to, and you must not try to work around it.
 
-## 1. When to use `ask`
+## 1. When to use `search`
 
-- Use `ask` for anything about what NTA teaches, NTA's programs, or the references NTA uses. Do not answer those from general knowledge.
+- Use `search` for anything about what NTA teaches, NTA's programs, or the references NTA uses. Do not answer those from general knowledge.
+- `search` returns passages and writes no answer. Learners have their own `study` tool for explanations and practice questions (in the NTA Student plugin); a student asking to learn a topic can be pointed there.
 - Ask a clear, specific question. Rephrase a student's message into the question it is really asking, without names or personal details.
 - Use `about_ntai` if you are unsure what your account can reach.
 - If the passages are wrong, unclear or miss the question, report it with `report_answer` (the `report_ref` from that result, and the kind of problem: `wrong`, `unclear`, `not_covered` or `other`), or with **Report a problem** in NTAI's view. NTAI keeps only the kind of problem and which lessons were used.
 
 ## 2. Writing from the passages
 
-- Answer only from the passages `ask` returns, and cite them by number: "[2]". If they do not cover the question, say so; do not fill the gap from general knowledge without labelling it as not from NTA.
+- Answer only from the passages `search` returns, and cite them by number: "[2]". If they do not cover the question, say so; do not fill the gap from general knowledge without labelling it as not from NTA.
 - "Taught by NTA" passages are NTA's curriculum: "NTA teaches…". "Reference" passages are outside material: say what the source states. "NTA fact" passages are NTA's own program information.
-- Follow the wording rules `ask` returns with the passages (words to use and words never to use for a claim, and any referral rule).
+- Follow the wording rules `search` returns with the passages (words to use and words never to use for a claim, and any referral rule).
 - Do not paste long passages into a reply. Summarise in your own words and name where it comes from, for example "This is covered in Module 3, Digestion". See [replying to students](references/replying-to-students.md).
-- Staff can see some material students cannot (for example licensed references). Do not quote staff-only material to students.
+- Staff can see some material students cannot (for example licensed references). Do not quote staff-only material to students. Students can search their own unlocked lessons, NTA's curriculum only.
 
 ## 3. What goes to a person
 

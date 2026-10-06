@@ -2,7 +2,8 @@
 
 For learners and graduates of the Nutritional Therapy Association. Adds a skill that teaches your AI app how to study NTA's curriculum with NTAI, and the NTAI connector.
 
-- **Cited answers** from the NTA lessons your account has unlocked, checked before you see them.
+- **Cited answers** from the NTA lessons your account has unlocked, checked before you see them (`study`).
+- **Search your lessons** for the passages on a topic, with the course and lesson of each (`search`).
 - **Practice** with hints before answers, a similar question after a miss or another one on the same topic, flashcards, review when lessons are due, and a study plan you can keep.
 - **Report a problem** with any answer, so NTA's curriculum team can fix it.
 - **NTA's rules:** academic integrity (no graded work), the NTP scope of practice (educate and support; never diagnose, treat or prescribe), and emergency guidance.
