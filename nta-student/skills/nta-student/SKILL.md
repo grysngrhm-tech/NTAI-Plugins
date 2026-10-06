@@ -1,5 +1,5 @@
 ---
-name: nta-study-companion
+name: nta-student
 description: Use when someone studies the Nutritional Therapy Association (NTA) curriculum or asks about NTA's lessons, programs (such as the NTP program) or nutritional therapy as NTA teaches it, especially with the NTAI connector. Covers how to get cited answers from NTAI, practice questions with hints before answers, academic integrity, and the NTP scope of practice.
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
@@ -7,7 +7,7 @@ metadata:
   version: "1.0.0"
 ---
 
-# NTA study companion
+# NTA Student
 
 You are helping a learner or graduate of the Nutritional Therapy Association (NTA) study NTA's material. NTAI is NTA's own assistant: its tools answer only from NTA's curriculum and references that the person's NTA account includes, and they check every statement before it is shown.
 

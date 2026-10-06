@@ -1,4 +1,4 @@
-# NTA Study Companion
+# NTA Student
 
 For learners and graduates of the Nutritional Therapy Association. Adds a skill that teaches your AI app how to study NTA's curriculum with NTAI, and the NTAI connector.
 

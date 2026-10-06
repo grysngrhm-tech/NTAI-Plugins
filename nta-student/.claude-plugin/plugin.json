@@ -1,6 +1,6 @@
 {
-  "name": "nta-study-companion",
-  "displayName": "NTA Study Companion",
+  "name": "nta-student",
+  "displayName": "NTA Student",
   "version": "1.0.0",
   "description": "Study the Nutritional Therapy Association's curriculum with NTAI: answers checked against NTA's material with numbered sources, practice questions with hints before answers, and NTA's scope-of-practice and academic-integrity rules. Needs an NTA account with a program enrollment.",
   "author": { "name": "Nutritional Therapy Association", "url": "https://nutritionaltherapy.com" },
