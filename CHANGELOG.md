@@ -1,0 +1,13 @@
+# Changelog
+
+What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/plugin.json`; it goes up with every release, and Claude updates plugins installed from this marketplace by it.
+
+## 2026-10-05
+
+### nta-student 1.1.0, nta-staff 1.1.0
+- **Sign-in upgrade (NTAI):** the connector bundled in each plugin now signs in by itself: NTAI registers Claude automatically, so you no longer add the NTAI connector by hand before connecting the plugin. Every connection shows a consent page naming the NTA account you signed in with, so you can check it before choosing Allow. You can sign in with a passkey (Face ID, Touch ID or your device's PIN) instead of waiting for an emailed code.
+- **Skills:** "Another question" on the same topic (`study` with `avoid`); reporting a wrong or unclear answer with `report_answer` or the view's Report a problem button; confirming before `clear_study_record`; clearing the old plan before saving a new one; which practice results reach the study record; the "NTA fact" and "Research" source labels; for staff, following the wording rules that come with `ask`'s passages.
+- **Metadata:** repository, licence and keywords in each `plugin.json`; install steps for the marketplace and for file upload in each README.
+
+### nta-student 1.0.0, nta-staff 1.0.0
+- The student plugin is renamed from `nta-study-companion` to **NTA Student** (`nta-student`), for students and graduates; the staff plugin is **NTA Staff** (`nta-staff`). The marketplace is `ntai`, published at `grysngrhm-tech/NTAI-Plugins`. If you installed `nta-study-companion`, remove it and install NTA Student.

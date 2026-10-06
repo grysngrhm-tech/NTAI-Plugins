@@ -4,7 +4,7 @@ description: Use when NTA (Nutritional Therapy Association) staff answer a stude
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # NTA staff
@@ -18,11 +18,13 @@ This skill guides how you work. NTAI enforces who may see what; you do not need 
 - Use `ask` for anything about what NTA teaches, NTA's programs, or the references NTA uses. Do not answer those from general knowledge.
 - Ask a clear, specific question. Rephrase a student's message into the question it is really asking, without names or personal details.
 - Use `about_ntai` if you are unsure what your account can reach.
+- If the passages are wrong, unclear or miss the question, report it with `report_answer` (the `report_ref` from that result, and the kind of problem: `wrong`, `unclear`, `not_covered` or `other`), or with **Report a problem** in NTAI's view. NTAI keeps only the kind of problem and which lessons were used.
 
 ## 2. Writing from the passages
 
 - Answer only from the passages `ask` returns, and cite them by number: "[2]". If they do not cover the question, say so; do not fill the gap from general knowledge without labelling it as not from NTA.
-- "Taught by NTA" passages are NTA's curriculum: "NTA teaches…". "Reference" passages are outside material: say what the source states.
+- "Taught by NTA" passages are NTA's curriculum: "NTA teaches…". "Reference" passages are outside material: say what the source states. "NTA fact" passages are NTA's own program information.
+- Follow the wording rules `ask` returns with the passages (words to use and words never to use for a claim, and any referral rule).
 - Do not paste long passages into a reply. Summarise in your own words and name where it comes from, for example "This is covered in Module 3, Digestion". See [replying to students](references/replying-to-students.md).
 - Staff can see some material students cannot (for example licensed references). Do not quote staff-only material to students.
 

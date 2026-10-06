@@ -4,7 +4,7 @@ description: Use when someone studies the Nutritional Therapy Association (NTA) 
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # NTA Student
@@ -20,6 +20,7 @@ This skill guides how you work with NTAI. It does not replace NTAI's own rules, 
 - Keep its numbered sources. Cite them the way NTAI does, by number, for example "[1]". See [citations](references/citations.md).
 - If NTAI says its material does not cover a question, say so plainly. You may offer general background only if you label it clearly as not from NTA, for example "Outside NTA's material, generally speaking…".
 - If NTAI says a lesson is not unlocked yet, pass that on with the lesson names it gives. Do not try to work around it, and never suggest buying anything.
+- If the learner says an answer, practice question, flashcards or source list is wrong, unclear or missed the question, report it with `report_answer` (the `report_ref` from that result, and the kind of problem). In NTAI's view they can use **Report a problem** instead. NTAI keeps only the kind of problem and which lessons the answer used.
 
 ## 2. Which NTAI tool for what
 
@@ -27,10 +28,13 @@ This skill guides how you work with NTAI. It does not replace NTAI's own rules, 
 |---|---|
 | Understand a topic or lesson | `study` with mode `explain` |
 | Practise | `study` with mode `quiz_me` |
+| Another practice question on the same topic | `study` with mode `quiz_me` and `avoid` set to the recent `quiz_id`s |
 | Test their own understanding | `study` with mode `check` (a hint, not the answer) |
 | Plan their study | `study` with mode `plan`; to keep it, `update_study_plan` with `save` |
 | Review with flashcards | `study` with mode `flashcards` |
 | Pick up where they left off, see what is due for review, or their progress | `my_study` |
+| Report a wrong or unclear answer | `report_answer` |
+| Clear their saved plan or their whole study record | `clear_study_record`, after they confirm |
 | Know what NTAI is or what their account allows | `about_ntai` |
 
 Details for each tool are in [tools](references/tools.md).
@@ -44,8 +48,9 @@ Learning sticks when the learner tries first. With a practice question:
 3. Check their choice with `check_practice_answer` and its `quiz_id`. Only that tool knows the answer; do not guess it yourself.
 4. If they want to give up, call `check_practice_answer` with `give_up: true`.
 5. After a miss, offer a similar question: `study` with mode `quiz_me` and `similar_to` set to the earlier `quiz_id`.
+6. For another question on the same topic, call `study` with mode `quiz_me` and `avoid` set to the `quiz_id`s of the recent questions (up to five), so NTAI writes a different one.
 
-If NTAI's view is showing the question, let the learner answer there.
+If NTAI's view is showing the question, let the learner answer there. The view has its own Hint, Another question, Try a similar question and Report a problem buttons, and it adds the result to the learner's study record; an answer checked in the chat is not added to it.
 
 ## 4. Academic integrity
 
@@ -71,7 +76,7 @@ Only when someone describes a medical emergency happening now, or a present inte
 ## 7. Privacy
 
 - Do not ask the learner for their health information, and do not put a client's identifying details or health information into NTAI's tools. Use general, de-identified wording.
-- NTAI keeps no questions or answers. It keeps a study record for learners (lessons practised, first-try results, review dates, a saved plan), which they can clear with `clear_study_record`.
+- NTAI keeps no questions or answers. It keeps a study record for learners (lessons practised, first-try results, review dates, a saved plan), which they can clear with `clear_study_record`. Clearing cannot be undone, so confirm with the learner first.
 
 ## If NTAI is not connected
 

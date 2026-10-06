@@ -2,15 +2,6 @@
 
 Plugins from the Nutritional Therapy Association (NTA) for working with NTA's material through **NTAI**, NTA's assistant. Each plugin installs NTAI's connector together with NTA's skills.
 
-## Install in Claude (Pro, Max, Team or Enterprise)
-
-1. In Claude on the web or the desktop app, open **Customize → Plugins**.
-2. Choose **Add → Add marketplace** and enter this repository (`grysngrhm-tech/NTAI-Plugins`). Plugins from a marketplace update themselves.
-3. Choose **Add** on the plugin for you (below).
-4. Open the plugin's **Connectors** tab and choose **Connect** next to NTAI. Sign in with your NTA account (an emailed code or your passkey) and allow NTAI.
-
-On a Team or Enterprise plan, an Owner adds the NTAI connector first (Organization settings → Connectors). A plugin can also be uploaded as a file from NTAI's help page.
-
 | Plugin | For | What it adds |
 |---|---|---|
 | [NTA Student](nta-student/) (`nta-student`) | NTA students and graduates | A skill for studying with NTAI: cited answers, hints before answers, academic integrity, the NTP scope of practice, emergencies; the NTAI connector |
@@ -18,6 +9,25 @@ On a Team or Enterprise plan, an Owner adds the NTAI connector first (Organizati
 
 Planned: NTA Instructor (`nta-instructor`: student progress, curriculum gaps and classroom tools for instructors) and NTA Practitioner (`nta-practitioner`: Nutri-Q and practice tools, in NTAI's clinical zone).
 
-Each plugin needs an NTA account: a program enrollment for NTA Student, a staff account for NTA Staff. Help: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help.
+## Install in Claude
+
+Plugins work on Claude's paid plans (Pro, Max, Team and Enterprise), on the web and in the desktop app.
+
+**From this marketplace (recommended; updates arrive by themselves):**
+1. Open **Customize → Plugins**.
+2. Choose **Add → Add marketplace** and enter `grysngrhm-tech/NTAI-Plugins`.
+3. Install the plugin for you from the list above.
+4. Installing does not connect NTAI. Open the plugin's **Connectors** tab and choose **Connect** next to NTAI.
+5. Sign in with your NTA account (an emailed code or your passkey). NTAI then shows which NTA account you signed in with and asks you to allow the connection; choose **Allow**.
+
+Marketplace plugins update automatically. To update sooner, use **Check for updates** on the marketplace (or turn **Sync automatically** on if it is off).
+
+**From a file:** download `nta-student.plugin` or `nta-staff.plugin` from NTAI's help page (https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help), choose **Add → Upload plugin** in **Customize → Plugins**, then connect as in steps 4 and 5. An uploaded plugin does not update itself; upload the new file to update.
+
+**Claude Team or Enterprise:** an Owner of your organization adds the NTAI connector first (Organization settings → Connectors). Then each person connects with their own NTA account.
+
+Each plugin needs an NTA account: a program enrollment (or a graduate's NTA membership) for NTA Student, a staff account for NTA Staff. Help: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help. What changed in each version: [CHANGELOG.md](CHANGELOG.md).
 
 **These plugins guide your AI app; they do not grant access.** NTAI itself decides what each person may see and checks every answer against NTA's material. The plugins contain no NTA curriculum.
+
+Licence: proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.

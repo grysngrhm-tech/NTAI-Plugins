@@ -3,7 +3,17 @@
 For learners and graduates of the Nutritional Therapy Association. Adds a skill that teaches your AI app how to study NTA's curriculum with NTAI, and the NTAI connector.
 
 - **Cited answers** from the NTA lessons your account has unlocked, checked before you see them.
-- **Practice** with hints before answers, a similar question after a miss, flashcards, review when lessons are due, and a study plan you can keep.
+- **Practice** with hints before answers, a similar question after a miss or another one on the same topic, flashcards, review when lessons are due, and a study plan you can keep.
+- **Report a problem** with any answer, so NTA's curriculum team can fix it.
 - **NTA's rules:** academic integrity (no graded work), the NTP scope of practice (educate and support; never diagnose, treat or prescribe), and emergency guidance.
 
-Needs an NTA account with a program enrollment, or a graduate's NTA membership. After installing, open the plugin's Connectors tab, choose Connect, sign in with your NTA account (an emailed code or your passkey) and allow NTAI. Help: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help.
+Needs an NTA account with a program enrollment, or a graduate's NTA membership, and a paid Claude plan (Pro, Max, Team or Enterprise).
+
+## Install in Claude
+
+1. In Claude, open **Customize → Plugins**, choose **Add → Add marketplace** and enter `grysngrhm-tech/NTAI-Plugins`. Install **NTA Student**. It updates itself from then on.
+   Or download `nta-student.plugin` from https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help and choose **Add → Upload plugin** (an uploaded plugin does not update itself).
+2. Installing does not connect NTAI: open the plugin's **Connectors** tab and choose **Connect** next to NTAI.
+3. Sign in with your NTA account (an emailed code or your passkey), check the NTA account NTAI names, and choose **Allow**.
+
+On a Claude Team or Enterprise plan, an Owner adds the NTAI connector first (Organization settings → Connectors). Help: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help.
