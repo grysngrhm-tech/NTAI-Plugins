@@ -1,0 +1,17 @@
+{
+  "name": "nta",
+  "owner": { "name": "Nutritional Therapy Association", "url": "https://nutritionaltherapy.com" },
+  "metadata": { "description": "Plugins from the Nutritional Therapy Association for studying and working with NTA's material through NTAI." },
+  "plugins": [
+    {
+      "name": "nta-study-companion",
+      "source": "./nta-study-companion",
+      "description": "Study NTA's curriculum with NTAI: cited answers, practice with hints before answers, and NTA's scope and integrity rules."
+    },
+    {
+      "name": "nta-staff",
+      "source": "./nta-staff",
+      "description": "For NTA staff: find and cite what NTA's material says with NTAI, and know what goes to a person."
+    }
+  ]
+}
