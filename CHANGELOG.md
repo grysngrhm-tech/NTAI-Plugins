@@ -4,6 +4,10 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-staff 1.4.0
+- **Suggest a change to NTAI (staff suggestions):** `suggest_change` sends NTA a correction (a wrong fact, a gap, wording), a problem in a lesson, or an idea; a named NTA reviewer approves or declines it, and nothing in NTAI changes until then. `same_as` adds "me too" to an existing suggestion instead of a duplicate. `list_suggestions` shows every staff suggestion with its status, through to live in NTAI. Suggestions with a name, contact detail or health detail about a person are refused.
+- **Skill:** when to suggest, to search first and pass the result's `report_ref` and passage number, and to check for the same suggestion before filing. A new starter, "Suggest a change to NTAI". Nothing to reconnect.
+
 ### nta-student 1.3.0, nta-staff 1.3.0
 - **Clearer tool names (NTAI):** `ask` is now `search`, `check_practice_answer` is `check_answer` and `practice_hint` is `get_hint`. The skills use the new names. Nothing to reconnect.
 - **Search for students:** NTA Student now has `search`, which finds the passages on a topic in the lessons your account has unlocked (NTA's own curriculum only), with the course and lesson for each. It opens when NTA releases it; until then it says it isn't open yet.
