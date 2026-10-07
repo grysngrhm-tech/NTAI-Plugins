@@ -14,7 +14,7 @@ Returns a checked answer with numbered sources, a practice question (question an
 ## `search`
 - `question`: what to look up, in the learner's words.
 
-Returns numbered excerpts from the NTA lessons the learner's account has unlocked (NTA's own curriculum only), each with its course and lesson, the wording to keep to, and a `report_ref`; or a notice (not covered, a graded question declined, or search not open yet). It writes no answer: answer only from the excerpts and cite them by number. Locked lessons and reference books are not searched. To explain or practise the topic, use `study`.
+Returns numbered excerpts from the NTA modules the learner has completed (for a graduate, their completed programs; NTA's own curriculum only), each with its course and lesson, the wording to keep to, and a `report_ref`; or a notice (not covered, a graded question declined, or search not open yet). It writes no answer: answer only from the excerpts and cite them by number. The module they are learning now, locked lessons and reference books are not searched (search opens a module once they have completed it). To explain or practise the topic, use `study`.
 
 ## `get_hint`
 `quiz_id` and `level` (1 or 2). Level 1 names the lesson; level 2 quotes a short passage. Never the answer. Some questions have fewer hints; NTAI says when there are no more.

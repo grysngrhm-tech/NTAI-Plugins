@@ -4,6 +4,9 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-student 1.3.2, nta-staff 1.4.1
+- **Search reaches completed modules (NTAI):** a student's `search` now finds passages in the modules they have completed (a graduate's, in their completed programs and on-demand courses), not in the module they are learning now; for that, `study` explains and practises it. The skills say so. Nothing to reconnect.
+
 ### nta-student 1.3.1
 - **Study record (NTAI):** the first check of each practice question now goes into your study record whether you answer in NTAI's view or in the chat, and nothing done after the answer is shown can change it. `check_answer` writes to your own record, so your app may ask you once to allow it. The skill says so.
 

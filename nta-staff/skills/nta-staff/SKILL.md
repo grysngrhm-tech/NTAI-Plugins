@@ -4,7 +4,7 @@ description: Use when NTA (Nutritional Therapy Association) staff answer a stude
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # NTA staff
@@ -27,7 +27,7 @@ This skill guides how you work. NTAI enforces who may see what; you do not need 
 - "Taught by NTA" passages are NTA's curriculum: "NTA teaches…". "Reference" passages are outside material: say what the source states. "NTA fact" passages are NTA's own program information.
 - Follow the wording rules `search` returns with the passages (words to use and words never to use for a claim, and any referral rule).
 - Do not paste long passages into a reply. Summarise in your own words and name where it comes from, for example "This is covered in Module 3, Digestion". See [replying to students](references/replying-to-students.md).
-- Staff can see some material students cannot (for example licensed references). Do not quote staff-only material to students. Students can search their own unlocked lessons, NTA's curriculum only.
+- Staff can see some material students cannot (for example licensed references). Do not quote staff-only material to students. Students can search the modules they have completed, NTA's curriculum only; for the module they are learning now, point them to `study`.
 
 ## 3. Suggesting a change to NTAI
 

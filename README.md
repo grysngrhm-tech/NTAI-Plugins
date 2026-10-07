@@ -4,7 +4,7 @@ Plugins from the Nutritional Therapy Association (NTA) for working with NTA's ma
 
 | Plugin | For | What it adds |
 |---|---|---|
-| [NTA Student](nta-student/) (`nta-student`) | NTA students and graduates | A skill for studying with NTAI: cited answers, searching your unlocked lessons, hints before answers, academic integrity, the NTP scope of practice, emergencies; the NTAI connector |
+| [NTA Student](nta-student/) (`nta-student`) | NTA students and graduates | A skill for studying with NTAI: cited answers, searching the modules you have completed, hints before answers, academic integrity, the NTP scope of practice, emergencies; the NTAI connector |
 | [NTA Staff](nta-staff/) (`nta-staff`) | All NTA staff | A skill for finding and citing NTA material with NTAI's `search`, what goes to a person, and keeping health information out; the NTAI connector |
 
 Planned: NTA Instructor (`nta-instructor`: student progress, curriculum gaps and classroom tools for instructors) and NTA Practitioner (`nta-practitioner`: Nutri-Q and practice tools, in NTAI's clinical zone).
