@@ -4,7 +4,7 @@ For learners and graduates of the Nutritional Therapy Association. Adds a skill 
 
 - **Cited answers** from the NTA lessons your account has unlocked, checked before you see them (`study`).
 - **Search the modules you've completed** for the passages on a topic, with the course and lesson of each (`search`).
-- **Practice** with hints before answers, a similar question after a miss or another one on the same topic, flashcards, review when lessons are due, and a study plan you can keep.
+- **A study session** for each lesson: a lesson check, results by objective, a study guide on what you have not mastered yet, practice rounds on your weak spots, and a clear finish line when you master the lesson. Hints come before answers.
 - **Report a problem** with any answer, so NTA's curriculum team can fix it.
 - **NTA's rules:** academic integrity (no graded work), the NTP scope of practice (educate and support; never diagnose, treat or prescribe), and emergency guidance.
 

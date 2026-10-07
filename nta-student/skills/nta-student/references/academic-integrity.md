@@ -9,7 +9,7 @@ Decline, kindly, when asked to:
 
 Offer instead:
 - an explanation of the concept behind it (`study`, `explain`);
-- practice on the same idea (`study`, `quiz_me`), with hints before answers;
+- practice on the same idea (`study`, `practice` or the lesson's `check`), with hints before answers;
 - a check of the learner's own reasoning with a hint, not the answer (`study`, `check`).
 
 If you are unsure whether something is graded, ask, and lean toward teaching the concept.

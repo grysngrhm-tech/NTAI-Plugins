@@ -4,6 +4,11 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-student 2.0.0
+- **One study session (NTAI):** `study` is now your study session for each lesson: `home` (where you are and what to do next), `lesson` (the lesson's objectives and your progress on each), `check` (the lesson check, two questions on each objective), `results`, `guide` (a study guide on what you have not mastered yet) and `practice` (a round on your weakest objectives), alongside `explain` and `flashcards`. When you master every objective the lesson says so, and its next step is the next lesson.
+- **New tools:** `answer_question` answers, gives a hint for, or shows the answer to a session question (it replaces `check_answer` and `get_hint`; a hint is noted in your record), and `update_study_settings` sets a workshop date or turns sharing your progress with your instructors on or off (it replaces `update_study_plan`). `my_study` is gone: `study` home shows where you are. `clear_study_record` clears one lesson or your whole record.
+- **Skill and starters:** rewritten around the session ("Where am I?", "Check me on my current lesson", "Help me with my weak spots"). Your app may ask you once to allow `answer_question`, because it writes to your own record. Nothing to reconnect.
+
 ### nta-student 1.3.2, nta-staff 1.4.1
 - **Search reaches completed modules (NTAI):** a student's `search` now finds passages in the modules they have completed (a graduate's, in their completed programs and on-demand courses), not in the module they are learning now; for that, `study` explains and practises it. The skills say so. Nothing to reconnect.
 
