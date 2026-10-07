@@ -4,7 +4,7 @@ description: Use when someone studies the Nutritional Therapy Association (NTA) 
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
 # NTA Student
@@ -48,6 +48,8 @@ Before a module's workshop: **readiness** shows the module by lesson and objecti
 | Get ready for a module's workshop ("Get me ready for my workshop") | `study` mode `readiness` with the module's `course_ref`, then mode `readiness_review` if they want the review |
 | Take the round home offers after a workshop | `study` mode `consolidation` with the `course_ref` |
 | Do practice their instructor or TA assigned | `study` mode `assignment` with the `assignment_ref` from home |
+| Quick refreshes on what they have mastered, when home says some are ready | `study` mode `refresh`, then `answer_question` |
+| See their settings: who can see their progress, when instructors or TAs looked, clearing their record | `study` mode `settings` |
 | Understand a topic or lesson | `study` mode `explain` with their question in `message` (`depth: "deeper"` to go further, when offered) |
 | A practice question on a topic, or on a lesson with no lesson check yet | `study` mode `practice` with a `message` (and `avoid` set to recent `question_ref`s for another one) |
 | Review with flashcards | `study` mode `flashcards` |
@@ -104,8 +106,8 @@ Only when someone describes a medical emergency happening now, or a present inte
 
 - Do not ask the learner for their health information, and do not put a client's identifying details or health information into NTAI's tools. Use general, de-identified wording.
 - NTAI keeps no questions or answers. It keeps a study record for learners: their progress on each lesson objective and, for each question they answer, whether it was right, whether they used a hint or gave up, and on NTA's own questions the option they chose; plus their study settings.
-- **Their study settings** (in NTAI's view, or through `update_study_settings`): workshop dates, and whether their NTA instructors and TAs can see their progress by objective. Sharing is on unless they turn it off; home says how often instructors or TAs looked this month, never who. Change a setting only when the learner asks.
-- **Clearing.** `clear_study_record` clears one lesson's progress or the whole record (their sharing choice stays). It cannot be undone, so confirm with the learner first.
+- **Their study settings** (in NTAI's view, or through `update_study_settings`): workshop dates, and whether their NTA instructors and TAs can see their progress by objective. Sharing is on unless they turn it off; home says how often instructors or TAs looked this month, never who, and `study` mode `settings` lists each look by role and day. Change a setting only when the learner asks.
+- **Clearing.** `clear_study_record` clears one lesson's progress or the whole record (their sharing choice stays). For 30 days after, NTAI remembers in a coded form which questions they had seen, so a question whose answer they were shown is not asked again as new, and questions from before the clear can no longer be answered (start a new check). It cannot be undone, so confirm with the learner first.
 
 ## If NTAI is not connected
 

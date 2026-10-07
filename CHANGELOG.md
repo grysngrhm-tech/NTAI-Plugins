@@ -4,6 +4,11 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-student 2.3.0
+- **Quick refreshes (NTAI):** when home says refreshes are ready, `study` mode `refresh` runs them as one short round (practice on a lesson you have mastered does the same).
+- **Your settings:** `study` mode `settings` shows whether your instructors and TAs can see your progress and what that means, each time one of them looked (role and day, never who), and clearing one lesson or your whole record, each confirmed first.
+- **Fair practice:** a question whose answer you were shown does not count toward mastery when it comes back, and rounds started before you clear your record end there (start a new check). Nothing to reconnect.
+
 ### nta-instructor 1.0.1
 - **Learners' privacy (NTAI):** a learner's progress now shows, for each objective they have practised, its state and the day it was first mastered, with their readiness results and the day they last practised; asking NTAI about a graded question never shows. A most chosen wrong answer shows only when enough learners chose it and enough chose something else. `assign_practice` answers the same whether or not the learner can receive the set, so a learner's choice not to share stays private. The skill and references say so. Nothing to reconnect.
 

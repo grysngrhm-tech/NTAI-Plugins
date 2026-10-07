@@ -16,6 +16,8 @@ All tools act only for the signed-in person and only on the NTA material their a
   - `readiness_review`: the module's readiness review (a round): one question on each objective already mastered, two on the others, up to a limit, every open lesson covered. NTA's approved questions only.
   - `consolidation`: one short round on the module's weakest objectives, offered once after its workshop.
   - `assignment`: a practice set an instructor or TA assigned (`assignment_ref` from home): two questions on each of its objectives. It is done when the round is finished.
+  - `refresh`: a short round of the refreshes that are due (one question on each objective the learner mastered whose refresh is due, `lesson_ref` optional to put that lesson's first). Practice on a mastered lesson with refreshes due gives the same round. With none due, it shows home.
+  - `settings`: the learner's settings: whether their instructors and TAs can see their progress, with what that means; each time an instructor or TA looked (role and day, never who); and clearing one lesson or everything, each with the wording to confirm first.
 - `lesson_ref`: the NTA Connect lesson (required for `lesson`, `check`, `results` and `guide`).
 - `course_ref`: the module (required for `readiness`, `readiness_review` and `consolidation`).
 - `assignment_ref` (with `assignment`): the practice set from home.
@@ -31,7 +33,7 @@ A graded test question in `message` (any mode) is taught, never answered: on a l
 - `question_ref` and `round_ref`: from the round.
 - `action`: `answer` (with `choice`, a letter), `hint` (with `level` 1 or 2) or `give_up`.
 
-Returns whether the answer was right, the answer, the checked explanation with its sources, a note on the wrong option chosen when NTA has one, the objective's state once both of its questions in the round are answered, and the round's progress and next step. The first answer to each question counts; answering again changes nothing and returns the first result. A hint before answering is noted, and a right answer after a hint does not count toward mastery. A round works for the same learner for about a day. It writes to the learner's own record, so their app may ask them to allow it.
+Returns whether the answer was right, the answer, the checked explanation with its sources, a note on the wrong option chosen when NTA has one, the objective's state once both of its questions in the round are answered, and the round's progress and next step. The first answer to each question counts; answering again changes nothing and returns the first result. A hint before answering is noted, and a right answer after a hint does not count toward mastery; neither does a right answer to a question whose answer the learner was already shown. A round works for the same learner for about a day, and not after they clear their record (start a new check). It writes to the learner's own record, so their app may ask them to allow it.
 
 ## `update_study_settings`
 The learner's study settings (also in NTAI's view). Change one only when the learner asks.
@@ -46,7 +48,7 @@ The learner's study settings (also in NTAI's view). Change one only when the lea
 Returns numbered excerpts from the NTA modules the learner has completed (for a graduate, their completed programs; NTA's own curriculum only), each with its course and lesson, the wording to keep to, and a `report_ref`; or a notice (not covered, a question that looks graded, or search not open yet). It writes no answer: answer only from the excerpts and cite them by number. The module they are learning now, locked lessons and reference books are not searched (search opens a module once they have completed it). To explain or practise the topic, or for the idea behind a graded question, use `study`.
 
 ## `clear_study_record`
-`what`: `lesson` (with `lesson_ref`: that lesson's progress and answers) or `everything` (progress on every objective, answers, workshop dates, assignments and the rounds they said no to). Their choice about sharing with instructors stays. Deletes and cannot be undone: confirm with the learner before calling it. Their app may also ask them to confirm.
+`what`: `lesson` (with `lesson_ref`: that lesson's progress and answers) or `everything` (progress on every objective, answers, workshop dates, assignments and the rounds they said no to). Their choice about sharing with instructors stays, and for 30 days NTAI remembers, in a coded form only, which questions they had seen, so a question whose answer they were shown is not asked again as new. Deletes and cannot be undone: confirm with the learner before calling it. Their app may also ask them to confirm.
 
 ## `report_answer`
 `report_ref` (from the answer, question, guide, flashcards or search excerpts being reported) and `category`: `wrong`, `unclear`, `not_covered` or `other`. NTA's curriculum team sees the kind of problem and which lessons the answer used, never the question or the answer. Do not add the learner's words.
