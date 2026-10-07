@@ -4,6 +4,9 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-instructor 1.0.1
+- **Learners' privacy (NTAI):** a learner's progress now shows, for each objective they have practised, its state and the day it was first mastered, with their readiness results and the day they last practised; asking NTAI about a graded question never shows. A most chosen wrong answer shows only when enough learners chose it and enough chose something else. `assign_practice` answers the same whether or not the learner can receive the set, so a learner's choice not to share stays private. The skill and references say so. Nothing to reconnect.
+
 ### nta-student 2.2.0, nta-staff 1.4.2
 - **Graded test questions are taught, never answered (NTAI):** bring one to `study` and NTAI teaches the idea behind it (a study guide on the objectives it draws on and a practice round on other questions, with those objectives noted as needing work) without saying which option is right. The skills now say so, and that your AI app should send such a question to `study` and not answer it itself; the old "NTAI declines graded questions" wording is gone. NTA Staff can point a student there.
 - **NTA Student skill rewritten around the study session as built:** home, the lesson map, the lesson check, results, the study guide, practice rounds, the mastered lesson and its next step, workshop readiness and its plan, the round after a workshop, practice from your instructor or TA, your study settings (workshop dates, sharing with instructors) and clearing; `search` for the modules you have completed only. The four starters ("Where am I?", "Check me on my current lesson", "Help me with my weak spots", "Get me ready for my workshop") are unchanged. Nothing to reconnect.

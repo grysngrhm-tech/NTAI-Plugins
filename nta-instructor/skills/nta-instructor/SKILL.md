@@ -4,7 +4,7 @@ description: Use when an NTA (Nutritional Therapy Association) instructor or TA 
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # NTA Instructor
@@ -52,7 +52,7 @@ More in [privacy](references/privacy.md).
 
 ## 5. Assigning practice only when asked
 
-`assign_practice` gives one learner a practice set that appears on their NTAI home. Call it only when the instructor asks for a practice set for that learner; never suggest it on your own as the next step, and never assign to several learners in a row without their say-so for each.
+`assign_practice` gives one learner a practice set that appears on their NTAI home if they can receive it (they are in a program the instructor teaches and share their progress). NTAI answers the same either way, so the answer never tells the instructor whether a learner shares; do not try to work it out. Call it only when the instructor asks for a practice set for that learner; never suggest it on your own as the next step, and never assign to several learners in a row without their say-so for each.
 
 1. Show the learner's progress for the module first (`show_progress` with the `learner_ref` and the `course_ref`), so every objective has a number such as "2.1".
 2. Confirm with the instructor which objectives (1 to 10) and whether there is a due date (within a year).
