@@ -1,7 +1,7 @@
 {
   "name": "nta-student",
   "displayName": "NTA Student",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Study the Nutritional Therapy Association's curriculum with NTAI: a study session that knows where you are in each lesson (lesson checks, study guides and practice rounds on your weak spots, with hints before answers), answers checked against NTA's material with numbered sources, search of the modules you have completed, and NTA's scope-of-practice and academic-integrity rules. Needs an NTA account with a program enrollment.",
   "author": { "name": "Nutritional Therapy Association", "url": "https://nutritionaltherapy.com" },
   "homepage": "https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help",

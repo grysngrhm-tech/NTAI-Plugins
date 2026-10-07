@@ -1,10 +1,10 @@
 ---
 name: nta-student
-description: Use when someone studies the Nutritional Therapy Association (NTA) curriculum or asks about NTA's lessons, programs (such as the NTP program) or nutritional therapy as NTA teaches it, especially with the NTAI connector. Covers NTAI's study session (where the learner is, lesson checks, results, study guides, practice rounds, explanations), answering its questions with hints before answers, when to use search, academic integrity, and the NTP scope of practice.
+description: Use when someone studies the Nutritional Therapy Association (NTA) curriculum or asks about NTA's lessons, programs (such as the NTP program) or nutritional therapy as NTA teaches it, especially with the NTAI connector. Covers NTAI's study session (where the learner is, lesson checks, results, study guides, practice rounds, workshop readiness, explanations), answering its questions with hints before answers, when to use search, academic integrity, and the NTP scope of practice.
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "2.0.0"
+  version: "2.1.0"
 ---
 
 # NTA Student
@@ -38,7 +38,10 @@ This skill guides how you work with NTAI. It does not replace NTAI's own rules, 
 | Understand a topic or lesson | `study` with mode `explain` (and `depth: "deeper"` to go further, when offered) |
 | A practice question on a topic, or on a lesson with no lesson check yet | `study` with mode `practice` and a `message` (and `avoid` set to recent `question_ref`s for another one) |
 | Review with flashcards | `study` with mode `flashcards` |
-| Set a workshop date, or turn sharing with instructors on or off | `update_study_settings` |
+| Get ready for a module's workshop ("get me ready for my workshop") | `study` with mode `readiness` and the module's `course_ref`: where they are by lesson and objective, the countdown and a plan to their workshop date |
+| A practice review across the whole module before the workshop | `study` with mode `readiness_review` and the `course_ref`, then `answer_question`; it is practice, never NTA's module test |
+| The round home offers after a workshop, or practice their instructor or TA assigned | `study` with mode `consolidation` and the `course_ref`, or mode `assignment` and the `assignment_ref` from home |
+| Set a workshop date, turn sharing with instructors on or off, or say no to an assigned set or the round after a workshop | `update_study_settings` |
 | Find where their completed lessons cover something | `search` |
 | Report a wrong or unclear answer | `report_answer` |
 | Clear one lesson's progress or their whole study record | `clear_study_record`, after they confirm |
@@ -54,7 +57,9 @@ Learning sticks when the learner tries first. With a lesson check, a practice ro
 2. Let the learner choose. If they ask for help, call `answer_question` with action `hint`, level 1 (the lesson it draws on), then level 2 (a short passage). A hint is noted in their record: a right answer after a hint does not count toward mastery. Do not use `search` to look up a question's answer.
 3. Check their choice with `answer_question`, action `answer`, the question's `question_ref`, the `round_ref` and their letter. Only that tool knows the answer; do not guess it yourself.
 4. If they want to give up, call `answer_question` with action `give_up`.
-5. When the round is finished, show the results (`study` mode `results` with the `round_ref`), then offer the study guide or a practice round.
+5. When the round is finished, show the results (`study` mode `results` with the `round_ref`, and the `lesson_ref` for a lesson's round), then offer the study guide or a practice round.
+
+The readiness review works the same way. Call it practice: it helps them prepare and is never NTA's module test. NTAI sends no reminders; mention a workshop countdown, an assigned set or the round after a workshop only when home shows it.
 
 If NTAI's view is showing the question, let the learner answer there. Whether they answer in the view or in the chat, the first answer to each question is the one that counts, so send only the learner's own choice, once they have made it.
 
@@ -82,7 +87,7 @@ Only when someone describes a medical emergency happening now, or a present inte
 ## 7. Privacy
 
 - Do not ask the learner for their health information, and do not put a client's identifying details or health information into NTAI's tools. Use general, de-identified wording.
-- NTAI keeps no questions or answers. It keeps a study record for learners: their progress on each lesson objective and, for each question they answer, whether it was right, whether they used a hint or gave up, and on NTA's own questions the option they chose; plus their settings. Their NTA instructors and TAs can see their progress by objective unless they turn it off (`update_study_settings`). They can clear the record with `clear_study_record`. Clearing cannot be undone, so confirm with the learner first.
+- NTAI keeps no questions or answers. It keeps a study record for learners: their progress on each lesson objective and, for each question they answer, whether it was right, whether they used a hint or gave up, and on NTA's own questions the option they chose; plus their settings. Their NTA instructors and TAs can see their progress by objective unless they turn it off (`update_study_settings`); home says how often they looked this month, never who. They can clear the record with `clear_study_record`. Clearing cannot be undone, so confirm with the learner first.
 
 ## If NTAI is not connected
 

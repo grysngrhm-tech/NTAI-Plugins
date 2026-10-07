@@ -4,6 +4,11 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-student 2.1.0
+- **Workshop readiness (NTAI):** `study` mode `readiness` shows where you are in a module, lesson by lesson and objective by objective, with a countdown and a plan worked back from your workshop date; `readiness_review` is a practice review across the module's open lessons (practice, never NTA's module test). After a workshop, home offers one short round on the module's weakest objectives (`consolidation`).
+- **Practice from your instructor or TA:** home lists practice sets they assign you, each run with `study` mode `assignment`; it is done when you finish the round, or you can say not now (`update_study_settings` with `dismiss_assignment`). Home also says how often your instructors looked at your progress this month, and that you can turn sharing off.
+- **Skill and starters:** a new starter, "Get me ready for my workshop". Nothing to reconnect.
+
 ### nta-instructor 1.0.0
 - **New plugin, for NTA instructors and TAs (NTAI).** Its own connection (`nta-instructor`) with NTAI's instructor tools: `show_progress` (the modules you teach, a module's group summary, or one learner's progress by learning objective, found by their NTA Connect profile link or email), `find_gaps` (a module's hardest objectives and most chosen wrong answers), `prepare_class` (a workshop brief with NTA's practice questions and their answers, for you), `draft_message` (a check-in note you edit and send yourself; NTAI never sends it) and `assign_practice` (a practice set on the learner's NTAI home, only when you ask), plus `about_ntai`.
 - **Skill:** which tool for what, naming a learner by profile link or email (never by name), learners' privacy (never paste a learner's name or progress into other tools; group figures hide small groups), drafts you send yourself, and assigning practice only when asked. Starters: "How is my group doing?", "Prepare my workshop brief", "Show a learner's progress", "Draft a check-in message".
