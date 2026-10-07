@@ -6,8 +6,9 @@ Plugins from the Nutritional Therapy Association (NTA) for working with NTA's ma
 |---|---|---|
 | [NTA Student](nta-student/) (`nta-student`) | NTA students and graduates | A skill for studying with NTAI: cited answers, searching the modules you have completed, hints before answers, academic integrity, the NTP scope of practice, emergencies; the NTAI connector |
 | [NTA Staff](nta-staff/) (`nta-staff`) | All NTA staff | A skill for finding and citing NTA material with NTAI's `search`, what goes to a person, and keeping health information out; the NTAI connector |
+| [NTA Instructor](nta-instructor/) (`nta-instructor`) | NTA instructors and TAs | A skill for NTAI's instructor tools: learners' progress by learning objective, group summaries and where learners struggle, workshop briefs, check-in drafts you send yourself, practice sets you assign, and keeping learners' progress private; the NTAI connector |
 
-Planned: NTA Instructor (`nta-instructor`: student progress, curriculum gaps and classroom tools for instructors) and NTA Practitioner (`nta-practitioner`: Nutri-Q and practice tools, in NTAI's clinical zone).
+Planned: NTA Practitioner (`nta-practitioner`: Nutri-Q and practice tools, in NTAI's clinical zone).
 
 ## Install in Claude
 
@@ -24,11 +25,11 @@ Marketplace plugins update automatically. To update sooner, use **Check for upda
 
 **More than one plugin:** install every plugin that fits you, for example NTA Staff and NTA Student if you work at NTA and also study. Each plugin has its own NTAI connection with its own tools, so connect each one; after the first, you are usually still signed in and only choose Allow. What each offers still depends on your NTA account.
 
-**From a file:** download `nta-student.plugin` or `nta-staff.plugin` from NTAI's help page (https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help), choose **Add → Upload plugin** in **Customize → Plugins**, then connect as in steps 4 and 5. An uploaded plugin does not update itself; upload the new file to update.
+**From a file:** download `nta-student.plugin`, `nta-staff.plugin` or `nta-instructor.plugin` from NTAI's help page (https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help), choose **Add → Upload plugin** in **Customize → Plugins**, then connect as in steps 4 and 5. An uploaded plugin does not update itself; upload the new file to update.
 
 **Claude Team or Enterprise:** an Owner of your organization adds the NTAI connector first (Organization settings → Connectors). Then each person connects with their own NTA account.
 
-Each plugin needs an NTA account: a program enrollment (or a graduate's NTA membership) for NTA Student, a staff account for NTA Staff. Help: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help. What changed in each version: [CHANGELOG.md](CHANGELOG.md).
+Each plugin needs an NTA account: a program enrollment (or a graduate's NTA membership) for NTA Student, a staff account for NTA Staff, the instructor or TA role for NTA Instructor. Instructors and TAs without a paid Claude plan can use NTAI for instructors in a browser: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/teach. Help: https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help. What changed in each version: [CHANGELOG.md](CHANGELOG.md).
 
 **These plugins guide your AI app; they do not grant access.** NTAI itself decides what each person may see and checks every answer against NTA's material. The plugins contain no NTA curriculum.
 

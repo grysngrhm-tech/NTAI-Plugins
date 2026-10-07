@@ -4,6 +4,11 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-instructor 1.0.0
+- **New plugin, for NTA instructors and TAs (NTAI).** Its own connection (`nta-instructor`) with NTAI's instructor tools: `show_progress` (the modules you teach, a module's group summary, or one learner's progress by learning objective, found by their NTA Connect profile link or email), `find_gaps` (a module's hardest objectives and most chosen wrong answers), `prepare_class` (a workshop brief with NTA's practice questions and their answers, for you), `draft_message` (a check-in note you edit and send yourself; NTAI never sends it) and `assign_practice` (a practice set on the learner's NTAI home, only when you ask), plus `about_ntai`.
+- **Skill:** which tool for what, naming a learner by profile link or email (never by name), learners' privacy (never paste a learner's name or progress into other tools; group figures hide small groups), drafts you send yourself, and assigning practice only when asked. Starters: "How is my group doing?", "Prepare my workshop brief", "Show a learner's progress", "Draft a check-in message".
+- Needs an NTA account with the instructor or TA role. Without a paid Claude plan, use NTAI for instructors in a browser (`/teach`).
+
 ### nta-student 2.0.0
 - **One study session (NTAI):** `study` is now your study session for each lesson: `home` (where you are and what to do next), `lesson` (the lesson's objectives and your progress on each), `check` (the lesson check, two questions on each objective), `results`, `guide` (a study guide on what you have not mastered yet) and `practice` (a round on your weakest objectives), alongside `explain` and `flashcards`. When you master every objective the lesson says so, and its next step is the next lesson.
 - **New tools:** `answer_question` answers, gives a hint for, or shows the answer to a session question (it replaces `check_answer` and `get_hint`; a hint is noted in your record), and `update_study_settings` sets a workshop date or turns sharing your progress with your instructors on or off (it replaces `update_study_plan`). `my_study` is gone: `study` home shows where you are. `clear_study_record` clears one lesson or your whole record.

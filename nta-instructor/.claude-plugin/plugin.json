@@ -1,0 +1,11 @@
+{
+  "name": "nta-instructor",
+  "displayName": "NTA Instructor",
+  "version": "1.0.0",
+  "description": "For Nutritional Therapy Association instructors and TAs: see the progress of learners in the programs you teach by learning objective, a module's group summary and where learners struggle, prepare a workshop brief with NTA's practice questions, draft a check-in message for you to send yourself, and assign a learner a practice set, with NTAI. Needs an NTA instructor or TA account.",
+  "author": { "name": "Nutritional Therapy Association", "url": "https://nutritionaltherapy.com" },
+  "homepage": "https://nt-a678963363c4463291b3051c5b5e011c.ecs.us-west-2.on.aws/help",
+  "repository": "https://github.com/grysngrhm-tech/NTAI-Plugins",
+  "license": "Proprietary",
+  "keywords": ["NTA", "NTAI", "nutrition", "instructor", "teaching assistant", "learner progress", "workshops"]
+}

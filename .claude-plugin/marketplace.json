@@ -12,6 +12,11 @@
       "name": "nta-staff",
       "source": "./nta-staff",
       "description": "For NTA staff: find and cite what NTA's material says with NTAI, and know what goes to a person."
+    },
+    {
+      "name": "nta-instructor",
+      "source": "./nta-instructor",
+      "description": "For NTA instructors and TAs: learners' progress by learning objective, group summaries, workshop briefs, check-in drafts you send yourself, and practice sets you assign, with NTAI."
     }
   ]
 }
