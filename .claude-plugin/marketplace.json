@@ -6,7 +6,7 @@
     {
       "name": "nta-student",
       "source": "./nta-student",
-      "description": "Study NTA's curriculum with NTAI: cited answers, practice with hints before answers, and NTA's scope and integrity rules."
+      "description": "Study NTA's curriculum with NTAI: a study session that knows where you are, lesson checks and practice with hints before answers, workshop readiness, cited answers, and NTA's scope and integrity rules."
     },
     {
       "name": "nta-staff",

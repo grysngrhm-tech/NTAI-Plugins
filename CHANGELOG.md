@@ -4,6 +4,10 @@ What changed in NTA's plugins. Each plugin's version is in its `.claude-plugin/p
 
 ## 2026-10-07
 
+### nta-student 2.2.0, nta-staff 1.4.2
+- **Graded test questions are taught, never answered (NTAI):** bring one to `study` and NTAI teaches the idea behind it (a study guide on the objectives it draws on and a practice round on other questions, with those objectives noted as needing work) without saying which option is right. The skills now say so, and that your AI app should send such a question to `study` and not answer it itself; the old "NTAI declines graded questions" wording is gone. NTA Staff can point a student there.
+- **NTA Student skill rewritten around the study session as built:** home, the lesson map, the lesson check, results, the study guide, practice rounds, the mastered lesson and its next step, workshop readiness and its plan, the round after a workshop, practice from your instructor or TA, your study settings (workshop dates, sharing with instructors) and clearing; `search` for the modules you have completed only. The four starters ("Where am I?", "Check me on my current lesson", "Help me with my weak spots", "Get me ready for my workshop") are unchanged. Nothing to reconnect.
+
 ### nta-student 2.1.0
 - **Workshop readiness (NTAI):** `study` mode `readiness` shows where you are in a module, lesson by lesson and objective by objective, with a countdown and a plan worked back from your workshop date; `readiness_review` is a practice review across the module's open lessons (practice, never NTA's module test). After a workshop, home offers one short round on the module's weakest objectives (`consolidation`).
 - **Practice from your instructor or TA:** home lists practice sets they assign you, each run with `study` mode `assignment`; it is done when you finish the round, or you can say not now (`update_study_settings` with `dismiss_assignment`). Home also says how often your instructors looked at your progress this month, and that you can turn sharing off.

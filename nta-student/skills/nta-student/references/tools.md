@@ -25,6 +25,8 @@ All tools act only for the signed-in person and only on the NTA material their a
 
 A round lists numbered questions with lettered options, each with its `question_ref`, and the round's `round_ref`. Never the answers. A lesson with no lesson check yet says the check is coming soon; explanations, practice questions and flashcards still work. Answers, questions and flashcards carry a `report_ref` for `report_answer`.
 
+A graded test question in `message` (any mode) is taught, never answered: on a lesson with a lesson check, a study guide on the objectives it draws on and a practice round on other questions, with those objectives noted as needing work; otherwise an explanation of the lesson's idea. NTAI never says which option is right.
+
 ## `answer_question`
 - `question_ref` and `round_ref`: from the round.
 - `action`: `answer` (with `choice`, a letter), `hint` (with `level` 1 or 2) or `give_up`.
@@ -32,6 +34,7 @@ A round lists numbered questions with lettered options, each with its `question_
 Returns whether the answer was right, the answer, the checked explanation with its sources, a note on the wrong option chosen when NTA has one, the objective's state once both of its questions in the round are answered, and the round's progress and next step. The first answer to each question counts; answering again changes nothing and returns the first result. A hint before answering is noted, and a right answer after a hint does not count toward mastery. A round works for the same learner for about a day. It writes to the learner's own record, so their app may ask them to allow it.
 
 ## `update_study_settings`
+The learner's study settings (also in NTAI's view). Change one only when the learner asks.
 - `workshop`: a module's `course_ref` and a `date` (YYYY-MM-DD), or `null` to remove it.
 - `share_with_instructors`: `true` or `false`: whether their NTA instructors and TAs can see their progress by objective (on unless they turn it off).
 - `dismiss_assignment`: the `assignment_ref` of a practice set the learner does not want to do.
@@ -40,7 +43,7 @@ Returns whether the answer was right, the answer, the checked explanation with i
 ## `search`
 - `question`: what to look up, in the learner's words.
 
-Returns numbered excerpts from the NTA modules the learner has completed (for a graduate, their completed programs; NTA's own curriculum only), each with its course and lesson, the wording to keep to, and a `report_ref`; or a notice (not covered, a graded question declined, or search not open yet). It writes no answer: answer only from the excerpts and cite them by number. The module they are learning now, locked lessons and reference books are not searched (search opens a module once they have completed it). To explain or practise the topic, use `study`.
+Returns numbered excerpts from the NTA modules the learner has completed (for a graduate, their completed programs; NTA's own curriculum only), each with its course and lesson, the wording to keep to, and a `report_ref`; or a notice (not covered, a question that looks graded, or search not open yet). It writes no answer: answer only from the excerpts and cite them by number. The module they are learning now, locked lessons and reference books are not searched (search opens a module once they have completed it). To explain or practise the topic, or for the idea behind a graded question, use `study`.
 
 ## `clear_study_record`
 `what`: `lesson` (with `lesson_ref`: that lesson's progress and answers) or `everything` (progress on every objective, answers, workshop dates, assignments and the rounds they said no to). Their choice about sharing with instructors stays. Deletes and cannot be undone: confirm with the learner before calling it. Their app may also ask them to confirm.

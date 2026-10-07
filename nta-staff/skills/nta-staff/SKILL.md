@@ -4,7 +4,7 @@ description: Use when NTA (Nutritional Therapy Association) staff answer a stude
 license: Proprietary. Copyright Nutritional Therapy Association. May be used with NTAI; not for redistribution.
 metadata:
   publisher: Nutritional Therapy Association
-  version: "1.4.1"
+  version: "1.4.2"
 ---
 
 # NTA staff
@@ -16,7 +16,7 @@ This skill guides how you work. NTAI enforces who may see what; you do not need 
 ## 1. When to use `search`
 
 - Use `search` for anything about what NTA teaches, NTA's programs, or the references NTA uses. Do not answer those from general knowledge.
-- `search` returns passages and writes no answer. Learners have their own `study` tool for explanations and practice questions (in the NTA Student plugin); a student asking to learn a topic can be pointed there.
+- `search` returns passages and writes no answer. Learners have their own study session, `study`, in the NTA Student plugin: lesson checks, study guides and practice rounds on their weak spots, workshop readiness and explanations. A student asking to learn a topic can be pointed there.
 - Ask a clear, specific question. Rephrase a student's message into the question it is really asking, without names or personal details.
 - Use `about_ntai` if you are unsure what your account can reach.
 - If the passages are wrong, unclear or miss the question, report it with `report_answer` (the `report_ref` from that result, and the kind of problem: `wrong`, `unclear`, `not_covered` or `other`), or with **Report a problem** in NTAI's view. NTAI keeps only the kind of problem and which lessons were used.
@@ -53,4 +53,4 @@ Some questions are not NTAI's or yours to settle in a drafted reply. Flag them f
 
 ## 6. Graded work
 
-Do not answer, check or draft graded quiz, exam or assignment answers for a student. Offer to explain the concept instead.
+Do not answer, check or draft graded quiz, exam or assignment answers for a student. Offer to explain the concept instead, or point the student to `study` in NTA Student: it teaches the idea behind a graded question without answering it.
